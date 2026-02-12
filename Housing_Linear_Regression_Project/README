@@ -1,0 +1,119 @@
+🏠 House Price Prediction using Multivariate Linear Regression
+Project Overview
+
+This project implements a multivariate linear regression model using Python to predict house prices based on multiple features.
+
+The model uses three independent variables to predict a single dependent variable, making it a practical example of real-world regression modeling in real estate analysis.
+
+Dataset Description
+
+The dataset contains four columns:
+
+area – size of the house (independent variable)
+
+bedrooms – number of bedrooms (independent variable)
+
+age – age of the property in years (independent variable)
+
+price – house price (dependent variable)
+
+The house price is assumed to depend on the area, number of bedrooms, and the age of the property.
+
+Libraries Used
+
+Python
+
+Pandas
+
+NumPy
+
+Scikit-learn
+
+Data Loading and Exploration
+
+The dataset was loaded using Pandas.
+
+The structure of the data was inspected to understand the columns and data types.
+
+Missing values were identified during initial exploration.
+
+Handling Missing Values
+
+The bedrooms column contained missing values.
+
+Since the data is numeric and ordered, the median was used to fill missing values.
+
+After imputation, the dataset contained no missing values, making it suitable for modeling.
+
+Feature and Target Separation
+Independent Variables (X)
+
+Area
+
+Bedrooms
+
+Age
+
+Dependent Variable (y)
+
+Price
+
+The dependent variable was explicitly named for clarity and readability in the modeling process.
+
+Model Training
+
+A Linear Regression model was built using Scikit-learn.
+
+The model was trained using the independent variables and the target variable.
+
+After training, the following were examined:
+
+Model coefficients
+
+Model intercept
+
+Model performance score
+
+Model Evaluation
+
+The model achieved a score of approximately 0.9555.
+
+This high score indicates a strong relationship between the independent variables and the house price.
+
+The result suggests that the model fits the data well and produces reliable predictions.
+
+Predictions
+
+The trained model was used to predict house prices for different combinations of:
+
+Area
+
+Number of bedrooms
+
+Age of the house
+
+Predicted prices were rounded to two decimal places for better readability and presentation.
+
+Key Learnings
+
+Multivariate linear regression can effectively model real estate pricing.
+
+Handling missing values before training is critical.
+
+Model coefficients help explain how each feature affects the target variable.
+
+High model scores indicate good predictive performance when data quality is strong.
+
+Conclusion
+
+This project demonstrates:
+
+End-to-end regression modeling
+
+Data cleaning and preprocessing
+
+Feature-target separation
+
+Model training, evaluation, and prediction
+
+It serves as a solid foundation for more advanced machine learning models and real-world pricing systems.
